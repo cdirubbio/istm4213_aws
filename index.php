@@ -58,9 +58,9 @@
 
 <div class="container">
     <h2>Hello, World!</h2>
-    <p>This is a sample PHP application running on an EC2 instance. You can modify this page to suit your needs.</p>
+    <p>This is a sample PHP application running on an EC2 instance. Once assignments utilizing the server are being assigned, you should remove the following files: index.php, about.php, and syllabus.php from the /var/www/html directory.
+    </p>
     <?php
-        // Fetch the public IP address using an external API
         $public_ip = file_get_contents('https://api.ipify.org');
     ?>
     <p>Your EC2 Public IP Address is: <strong><?php echo $public_ip; ?></strong></p>
